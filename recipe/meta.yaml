@@ -13,8 +13,10 @@ source:
     - 0003-apple-api.patch  # [osx]
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
+  run_exports: 
+     - {{ pin_subpackage('cffi', max_pin='x') }}
 
 requirements:
   build:
