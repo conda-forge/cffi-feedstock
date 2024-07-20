@@ -3,13 +3,13 @@ About cffi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cffi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bitbucket.org/cffi/cffi
+Home: https://github.com/python-cffi/cffi
 
 Package license: MIT
 
 Summary: Foreign Function Interface for Python calling C code.
 
-Development: https://bitbucket.org/cffi/cffi/overview
+Development: https://github.com/python-cffi/cffi
 
 Documentation: http://cffi.readthedocs.org
 
@@ -361,7 +361,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
