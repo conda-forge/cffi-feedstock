@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
@@ -28,7 +28,7 @@ requirements:
     - python
     - pip
     - wheel
-    - setuptools
+    - setuptools >=66.1
     - libffi  # [not win]
     - pycparser
   run:
