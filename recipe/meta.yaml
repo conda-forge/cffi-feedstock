@@ -1,4 +1,4 @@
-{% set version = "1.16.0" %}
+{% set version = "1.17.0" %}
 
 package:
   name: cffi
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/cffi/cffi-{{ version }}.tar.gz
-  sha256: bcb3ef43e58665bbda2fb198698fcae6776483e0c4a631aa5647806c25e02cc0
+  sha256: f3157624b7558b914cb039fd1af735e5e8049a87c817cc215109ad1c8779df76
   patches:
     - 0001-Link-to-dl-library.patch
     - 0002-setup-linux.patch
@@ -14,20 +14,21 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - patch     # [not win]
     - m2-patch  # [win]
   host:
     - python
     - pip
     - wheel
-    - setuptools
+    - setuptools >=66.1
     - libffi  # [not win]
     - pycparser
   run:
