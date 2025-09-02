@@ -375,7 +375,7 @@ Feedstock Maintainers
 =====================
 
 * [@goanpeca](https://github.com/goanpeca/)
+* [@h-vetinari](https://github.com/h-vetinari/)
 * [@katietz](https://github.com/katietz/)
-* [@mingwandroid](https://github.com/mingwandroid/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
