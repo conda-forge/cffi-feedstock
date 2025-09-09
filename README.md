@@ -3,15 +3,15 @@ About cffi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cffi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bitbucket.org/cffi/cffi
+Home: https://github.com/python-cffi/cffi
 
 Package license: MIT
 
 Summary: Foreign Function Interface for Python calling C code.
 
-Development: https://bitbucket.org/cffi/cffi/overview
+Development: https://github.com/python-cffi/cffi
 
-Documentation: http://cffi.readthedocs.org
+Documentation: https://cffi.readthedocs.io
 
 Cffi aims to allow users to call C code from Python without having to
 learn a 3rd language. It provides a convenient and reliable way to call
