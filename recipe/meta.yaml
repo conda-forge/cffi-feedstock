@@ -8,9 +8,9 @@ source:
   url: https://pypi.org/packages/source/c/cffi/cffi-{{ version }}.tar.gz
   sha256: 44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529
   patches:
-    - 0001-Link-to-dl-library.patch
-    - 0002-setup-linux.patch
-    - 0003-apple-api.patch  # [osx]
+    - patches/0001-Link-to-dl-library.patch
+    - patches/0002-setup-linux.patch
+    - patches/0003-apple-api.patch  # [osx]
 
 build:
   number: 0
