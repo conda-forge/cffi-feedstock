@@ -71,6 +71,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.14.____cp314t" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_aarch64_python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
@@ -103,6 +110,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.14.____cp314t" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -141,6 +155,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_python3.14.____cp314t" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
@@ -173,6 +194,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314t" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -211,6 +239,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.14.____cp314t" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
@@ -245,6 +280,13 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_64_python3.14.____cp314t</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=137&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cffi-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.14.____cp314t" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -263,14 +305,14 @@ Current release info
 Installing cffi
 ===============
 
-Installing `cffi` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `cffi` from the `conda-forge/label/cffi_rc` channel can be achieved by adding `conda-forge/label/cffi_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/cffi_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cffi` can be installed with `conda`:
+Once the `conda-forge/label/cffi_rc` channel has been enabled, `cffi` can be installed with `conda`:
 
 ```
 conda install cffi
@@ -285,26 +327,26 @@ mamba install cffi
 It is possible to list all of the versions of `cffi` available on your platform with `conda`:
 
 ```
-conda search cffi --channel conda-forge
+conda search cffi --channel conda-forge/label/cffi_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search cffi --channel conda-forge
+mamba search cffi --channel conda-forge/label/cffi_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cffi --channel conda-forge
+mamba repoquery search cffi --channel conda-forge/label/cffi_rc
 
 # List packages depending on `cffi`:
-mamba repoquery whoneeds cffi --channel conda-forge
+mamba repoquery whoneeds cffi --channel conda-forge/label/cffi_rc
 
 # List dependencies of `cffi`:
-mamba repoquery depends cffi --channel conda-forge
+mamba repoquery depends cffi --channel conda-forge/label/cffi_rc
 ```
 
 
