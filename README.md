@@ -305,14 +305,14 @@ Current release info
 Installing cffi
 ===============
 
-Installing `cffi` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `cffi` from the `conda-forge/label/cffi_rc` channel can be achieved by adding `conda-forge/label/cffi_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/cffi_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cffi` can be installed with `conda`:
+Once the `conda-forge/label/cffi_rc` channel has been enabled, `cffi` can be installed with `conda`:
 
 ```
 conda install cffi
@@ -327,26 +327,26 @@ mamba install cffi
 It is possible to list all of the versions of `cffi` available on your platform with `conda`:
 
 ```
-conda search cffi --channel conda-forge
+conda search cffi --channel conda-forge/label/cffi_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search cffi --channel conda-forge
+mamba search cffi --channel conda-forge/label/cffi_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search cffi --channel conda-forge
+mamba repoquery search cffi --channel conda-forge/label/cffi_rc
 
 # List packages depending on `cffi`:
-mamba repoquery whoneeds cffi --channel conda-forge
+mamba repoquery whoneeds cffi --channel conda-forge/label/cffi_rc
 
 # List dependencies of `cffi`:
-mamba repoquery depends cffi --channel conda-forge
+mamba repoquery depends cffi --channel conda-forge/label/cffi_rc
 ```
 
 
