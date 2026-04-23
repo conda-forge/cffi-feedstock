@@ -11,12 +11,11 @@ Summary: Foreign Function Interface for Python calling C code.
 
 Development: https://github.com/python-cffi/cffi
 
-Documentation: https://cffi.readthedocs.io
+Documentation: https://cffi.readthedocs.io/
 
 Cffi aims to allow users to call C code from Python without having to
 learn a 3rd language. It provides a convenient and reliable way to call
 compiled C code from Python using interface declarations written in C.
-
 
 Current build status
 ====================
