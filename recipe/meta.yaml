@@ -42,11 +42,10 @@ test:
     - _cffi_backend
   requires:
     - pip
-    - openssl *
+    - zstd
   commands:
     - pip check
-    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('ucrtbase'))"  # [win]
-    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen(None))"  # [not win]
+    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('libzstd'))"
 
 about:
   home: https://github.com/python-cffi/cffi
