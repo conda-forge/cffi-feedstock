@@ -45,7 +45,7 @@ test:
     - zstd
   commands:
     - pip check
-    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('libzstd'))"
+    - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('zstd'))"
 
 about:
   home: https://github.com/python-cffi/cffi
