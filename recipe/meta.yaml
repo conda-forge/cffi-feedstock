@@ -42,7 +42,7 @@ test:
     - _cffi_backend
   requires:
     - pip
-    - zstd
+    - zstd *
   commands:
     - pip check
     - python -X faulthandler -c "from cffi import FFI; print(FFI().dlopen('zstd'))"
