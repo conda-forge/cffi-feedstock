@@ -312,7 +312,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@goanpeca](https://github.com/goanpeca/)
 * [@h-vetinari](https://github.com/h-vetinari/)
 * [@katietz](https://github.com/katietz/)
 * [@ocefpaf](https://github.com/ocefpaf/)
